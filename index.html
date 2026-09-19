@@ -1,0 +1,1347 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>鏡語</title>
+  <meta name="description" content="每天對著鏡子默念自己的句子，並在你設定的時間提醒你。">
+  <meta name="theme-color" content="#f6f1e6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#131015" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZiIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmM2RmYWUiLz48c3RvcCBvZmZzZXQ9Ii41IiBzdG9wLWNvbG9yPSIjYzk5YjVlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOGE2NDIzIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJnIiBjeD0iLjMyIiBjeT0iLjIyIiByPSIuOSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZmRmOCIvPjxzdG9wIG9mZnNldD0iLjQ1IiBzdG9wLWNvbG9yPSIjZmZmZGY4Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZWNlMmNmIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgZmlsbD0iI2Y2ZjFlNiIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSIyNTYiIHJ4PSIxNTAiIHJ5PSIyMDAiIGZpbGw9InVybCgjZikiLz4KICA8ZWxsaXBzZSBjeD0iMjU2IiBjeT0iMjU2IiByeD0iMTMwIiByeT0iMTgwIiBmaWxsPSJ1cmwoI2cpIi8+CiAgPHBhdGggZD0iTTE3MCAyNTAgTDMwMCAxMjAiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii43IiBzdHJva2Utd2lkdGg9IjE4IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="data:image/png;base64,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">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="鏡語">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+  <style>
+:root{
+  --bg:#f6f1e6;
+  --surface:#fffdf8;
+  --surface-2:#ece2cf;
+  --ink:#2b241c;
+  --ink-soft:#6b6052;
+  --accent:#a97b3f;
+  --accent-soft:#c99b5e;
+  --frame-1:#f3dfae;
+  --frame-2:#8a6423;
+  --shadow:rgba(43,36,28,.20);
+  --sheen:rgba(255,255,255,.38);
+  --font-display:'Noto Serif TC','Songti TC','PMingLiU',serif;
+  --font-ui:'Noto Sans TC','PingFang TC','Heiti TC',sans-serif;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#131015;
+    --surface:#1f1a22;
+    --surface-2:#2a2430;
+    --ink:#f1e9de;
+    --ink-soft:#ab9d8c;
+    --accent:#dcae6d;
+    --accent-soft:#eccb96;
+    --frame-1:#6e5527;
+    --frame-2:#e6c383;
+    --shadow:rgba(0,0,0,.55);
+    --sheen:rgba(255,255,255,.10);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#131015;
+  --surface:#1f1a22;
+  --surface-2:#2a2430;
+  --ink:#f1e9de;
+  --ink-soft:#ab9d8c;
+  --accent:#dcae6d;
+  --accent-soft:#eccb96;
+  --frame-1:#6e5527;
+  --frame-2:#e6c383;
+  --shadow:rgba(0,0,0,.55);
+  --sheen:rgba(255,255,255,.10);
+}
+
+*{box-sizing:border-box;}
+[hidden]{display:none!important;}
+html{
+  background:var(--bg);
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--font-ui);
+  font-size:14px;
+  margin:0;
+}
+.page{
+  max-width:480px;
+  margin:0 auto;
+  padding:28px 18px 60px;
+}
+.top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:22px;
+}
+.top-actions{ display:flex; gap:8px; }
+.eyebrow{
+  margin:0;
+  font-size:.8rem;
+  letter-spacing:.04em;
+  color:var(--ink-soft);
+}
+.icon-btn{
+  width:38px;height:38px;
+  border-radius:50%;
+  border:1px solid var(--surface-2);
+  background:var(--surface);
+  color:var(--ink);
+  font-size:1.05rem;
+  cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+}
+.icon-btn.has-badge{ border-color:var(--accent); }
+.icon-btn:focus-visible,
+.ctrl:focus-visible,
+.mirror:focus-visible,
+.dot:focus-visible,
+.check-btn:focus-visible,
+button:focus-visible,
+textarea:focus-visible,
+input:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:2px;
+}
+
+.stage{ padding:6px 0 4px; }
+.mirror{
+  display:block;
+  width:min(74vw,300px);
+  aspect-ratio:3/4;
+  margin:0 auto;
+  padding:10px;
+  border:0;
+  border-radius:50%;
+  background:conic-gradient(from 210deg,var(--frame-2),var(--frame-1) 25%,var(--accent-soft) 50%,var(--frame-1) 75%,var(--frame-2));
+  box-shadow:0 36px 60px -28px var(--shadow), inset 0 0 0 1px rgba(0,0,0,.10);
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+}
+.mirror-face{
+  position:relative;
+  width:100%;height:100%;
+  border-radius:50%;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:14% 15%;
+  background:radial-gradient(120% 90% at 28% 16%, var(--surface) 0%, var(--surface) 42%, var(--surface-2) 100%);
+}
+.mirror-face::before{
+  content:"";
+  position:absolute; inset:-30%;
+  z-index:1;
+  background:linear-gradient(112deg, transparent 42%, var(--sheen) 49%, transparent 56%);
+  pointer-events:none;
+}
+.cam-video{
+  position:absolute; inset:0;
+  z-index:0;
+  width:100%; height:100%;
+  object-fit:cover;
+  transform:scaleX(-1);
+  opacity:0;
+  transition:opacity .5s ease;
+}
+.mirror-face.camera-on .cam-video{ opacity:1; }
+.mirror-text{
+  position:relative;
+  z-index:2;
+  font-family:var(--font-display);
+  font-size:clamp(1.05rem,4.6vw,1.4rem);
+  line-height:1.55;
+  text-align:center;
+  color:var(--ink);
+  text-wrap:balance;
+  transition:opacity .28s ease, transform .28s ease, background .3s ease, color .3s ease;
+}
+.mirror-face.camera-on .mirror-text{
+  color:#fff;
+  background:rgba(20,16,12,.42);
+  padding:10px 16px;
+  border-radius:16px;
+  backdrop-filter:blur(2px);
+}
+@media (prefers-reduced-motion: reduce){
+  .mirror-text{ transition:none; }
+}
+
+.dots{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  justify-content:center;
+  max-width:280px;
+  margin:20px auto 0;
+  padding:0;
+}
+.dot{
+  width:7px;height:7px;
+  padding:0;
+  border-radius:50%;
+  border:1px solid var(--surface-2);
+  background:var(--surface);
+  cursor:pointer;
+  transition:transform .2s ease, background .2s ease;
+}
+.dot.active{
+  background:var(--accent);
+  transform:scale(1.3);
+  border-color:var(--accent);
+}
+
+.controls{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  margin-top:22px;
+}
+.cam-toggle{
+  display:block;
+  margin:16px auto 0;
+  font-family:var(--font-ui);
+  font-size:.82rem;
+  border:1px solid var(--surface-2);
+  background:var(--surface);
+  color:var(--ink-soft);
+  padding:7px 15px;
+  border-radius:999px;
+  cursor:pointer;
+}
+.cam-toggle.on{
+  border-color:var(--accent);
+  color:var(--accent);
+}
+.cam-warn{
+  text-align:center;
+  max-width:300px;
+  margin:8px auto 0;
+  font-size:.76rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  min-height:0;
+}
+.ctrl{
+  width:44px;height:44px;
+  border-radius:50%;
+  border:1px solid var(--surface-2);
+  background:var(--surface);
+  color:var(--ink);
+  font-size:1.05rem;
+  cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+}
+.ctrl-main{
+  width:54px;height:54px;
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  font-size:1.05rem;
+}
+
+.streak-card{
+  margin-top:34px;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  background:var(--surface);
+  border:1px solid var(--surface-2);
+  border-radius:20px;
+  padding:16px 18px;
+}
+.streak-num{
+  font-variant-numeric:tabular-nums;
+  font-weight:700;
+  font-size:2.1rem;
+  color:var(--accent);
+  min-width:1.6em;
+  text-align:center;
+}
+.streak-copy{ flex:1; min-width:0; }
+.streak-label{
+  margin:0 0 8px;
+  font-size:.78rem;
+  color:var(--ink-soft);
+}
+.check-btn{
+  font-family:var(--font-ui);
+  font-size:.88rem;
+  border:1px solid var(--accent);
+  background:transparent;
+  color:var(--accent);
+  padding:8px 14px;
+  border-radius:999px;
+  cursor:pointer;
+  max-width:100%;
+}
+.check-btn.done{
+  background:var(--accent);
+  color:#fff;
+  cursor:default;
+}
+
+.hint{
+  text-align:center;
+  max-width:340px;
+  margin:26px auto 0;
+  font-size:.8rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+}
+
+.sheet-backdrop{
+  position:fixed; inset:0;
+  background:rgba(0,0,0,.42);
+  z-index:20;
+}
+.sheet{
+  position:fixed;
+  left:0; right:0; bottom:0;
+  z-index:21;
+  max-width:480px;
+  margin:0 auto;
+  background:var(--surface);
+  border-radius:22px 22px 0 0;
+  padding:14px 20px calc(22px + env(safe-area-inset-bottom,0px));
+  box-shadow:0 -22px 50px rgba(0,0,0,.28);
+  max-height:82vh;
+  overflow-y:auto;
+}
+.sheet-handle{
+  width:36px;height:4px;
+  border-radius:99px;
+  background:var(--surface-2);
+  margin:2px auto 14px;
+}
+.sheet h2{
+  margin:0 0 14px;
+  font-family:var(--font-display);
+  font-size:1.15rem;
+}
+.sheet h2.section-gap{ margin-top:28px; padding-top:20px; border-top:1px solid var(--surface-2); }
+.sheet-note{
+  margin:10px 0 0;
+  font-size:.78rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.field-label{
+  display:block;
+  font-size:.8rem;
+  color:var(--ink-soft);
+  margin:14px 0 6px;
+}
+textarea{
+  width:100%;
+  font-family:var(--font-ui);
+  font-size:.92rem;
+  line-height:1.6;
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid var(--surface-2);
+  background:var(--bg);
+  color:var(--ink);
+  resize:vertical;
+}
+input[type="range"]{ width:100%; accent-color:var(--accent); }
+input[type="time"]{
+  font-family:var(--font-ui);
+  font-size:1rem;
+  padding:8px 12px;
+  border-radius:12px;
+  border:1px solid var(--surface-2);
+  background:var(--bg);
+  color:var(--ink);
+}
+.time-row{ display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+.status-pill{
+  font-size:.76rem;
+  padding:4px 10px;
+  border-radius:999px;
+  border:1px solid var(--surface-2);
+  color:var(--ink-soft);
+}
+.status-pill.on{ border-color:var(--accent); color:var(--accent); }
+.btn-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+.switch-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-top:16px;
+  font-size:.9rem;
+}
+.switch-row input{ accent-color:var(--accent); width:20px; height:20px; }
+.warn{
+  min-height:1.2em;
+  font-size:.78rem;
+  line-height:1.6;
+  color:var(--accent);
+  margin-top:6px;
+}
+.sheet-actions{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin-top:20px;
+}
+.sheet-actions-right{ display:flex; gap:10px; }
+.btn-ghost, .btn-solid{
+  font-family:var(--font-ui);
+  font-size:.9rem;
+  padding:9px 16px;
+  border-radius:999px;
+  cursor:pointer;
+}
+.btn-ghost{
+  border:1px solid var(--surface-2);
+  background:transparent;
+  color:var(--ink-soft);
+}
+.btn-solid{
+  border:none;
+  background:var(--accent);
+  color:#fff;
+}
+button:disabled{ opacity:.55; cursor:default; }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <header class="top">
+    <p class="eyebrow">每日鏡語 · <span id="todayLabel"></span></p>
+    <div class="top-actions">
+      <button class="icon-btn" id="reminderBtn" type="button" aria-label="提醒與備份">🔔</button>
+      <button class="icon-btn" id="settingsBtn" type="button" aria-label="編輯設定">⚙︎</button>
+    </div>
+  </header>
+
+  <main class="stage">
+    <button class="mirror" id="mirrorBtn" type="button" aria-label="暫停">
+      <span class="mirror-face" id="mirrorFace">
+        <video class="cam-video" id="camVideo" autoplay playsinline muted></video>
+        <span class="mirror-text" id="phraseText" aria-live="polite">…</span>
+      </span>
+    </button>
+
+    <div class="dots" id="dots" role="tablist" aria-label="鏡語清單"></div>
+
+    <div class="controls">
+      <button class="ctrl" id="prevBtn" type="button" aria-label="上一句">‹</button>
+      <button class="ctrl ctrl-main" id="playBtn" type="button" aria-label="暫停">❚❚</button>
+      <button class="ctrl" id="nextBtn" type="button" aria-label="下一句">›</button>
+    </div>
+
+    <button class="cam-toggle" id="camBtn" type="button">開啟鏡頭</button>
+    <p class="cam-warn" id="camWarn"></p>
+  </main>
+
+  <section class="streak-card">
+    <div class="streak-num" id="streakNum">0</div>
+    <div class="streak-copy">
+      <p class="streak-label">連續天數</p>
+      <button class="check-btn" id="checkBtn" type="button">今天默念完成了嗎？</button>
+    </div>
+  </section>
+
+  <p class="hint">看著鏡子裡的自己，把每一句慢慢念出來——不用急，讓潛意識先記住，身體再慢慢跟上。</p>
+</div>
+
+<div class="sheet-backdrop" id="backdrop" hidden></div>
+
+<div class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-label="編輯鏡語">
+  <div class="sheet-handle"></div>
+  <h2>編輯鏡語</h2>
+
+  <label class="field-label" for="phrasesArea">你的句子（每行一句）</label>
+  <textarea id="phrasesArea" rows="8"></textarea>
+  <p class="warn" id="warnMsg"></p>
+
+  <label class="field-label" for="speedRange">切換速度：<span id="speedVal">6</span> 秒</label>
+  <input type="range" id="speedRange" min="3" max="12" step="1">
+
+  <label class="switch-row" for="shuffleToggle">
+    <span>隨機順序播放</span>
+    <input type="checkbox" id="shuffleToggle">
+  </label>
+
+  <div class="sheet-actions">
+    <button class="btn-ghost" id="restoreBtn" type="button">恢復預設句子</button>
+    <div class="sheet-actions-right">
+      <button class="btn-ghost" id="cancelBtn" type="button">取消</button>
+      <button class="btn-solid" id="saveBtn" type="button">儲存</button>
+    </div>
+  </div>
+</div>
+
+<div class="sheet" id="reminderSheet" hidden role="dialog" aria-modal="true" aria-label="提醒與備份">
+  <div class="sheet-handle"></div>
+  <h2>每日提醒</h2>
+
+  <p class="sheet-note" id="installHint" hidden></p>
+
+  <label class="field-label" for="reminderTime">提醒時間</label>
+  <div class="time-row">
+    <input type="time" id="reminderTime" value="08:00">
+    <span class="status-pill" id="reminderStatus">未開啟</span>
+  </div>
+  <p class="warn" id="reminderMsg" role="status"></p>
+
+  <div id="pushSection">
+    <div class="btn-row">
+      <button class="btn-solid" id="reminderOnBtn" type="button">開啟提醒</button>
+      <button class="btn-ghost" id="reminderTestBtn" type="button" hidden>傳送測試通知</button>
+      <button class="btn-ghost" id="reminderOffBtn" type="button" hidden>關閉提醒</button>
+    </div>
+    <p class="sheet-note">當天打卡後就不會再提醒。關掉瀏覽器也會照常送達。</p>
+  </div>
+
+  <div id="calendarSection">
+    <p class="sheet-note" id="calendarNote">也可以把提醒放進手機行事曆：每天這個時間由行事曆跳通知，點開就能回到鏡語。</p>
+    <div class="btn-row">
+      <button class="btn-ghost" id="icsBtn" type="button">加到 iPhone／Mac 行事曆</button>
+      <button class="btn-ghost" id="gcalBtn" type="button">加到 Google 日曆</button>
+    </div>
+  </div>
+
+  <h2 class="section-gap">備份</h2>
+  <p class="sheet-note">資料只存在這台裝置上。換手機或清除瀏覽器資料前，先匯出一份。</p>
+  <div class="btn-row">
+    <button class="btn-ghost" id="exportBtn" type="button">匯出 JSON</button>
+    <button class="btn-ghost" id="importBtn" type="button">匯入 JSON</button>
+    <input type="file" id="importFile" accept="application/json,.json" hidden>
+  </div>
+  <p class="warn" id="backupMsg" role="status"></p>
+
+  <div class="sheet-actions">
+    <span></span>
+    <button class="btn-ghost" id="reminderCloseBtn" type="button">完成</button>
+  </div>
+</div>
+
+<script>window.MIRROR_SINGLE_FILE = true;</script>
+<script>
+// Tiny IndexedDB key-value store shared by the page and the service worker
+// (the worker reads today's phrases to put one in the reminder notification).
+(function (global) {
+  var DB_NAME = 'mirror-app';
+  var STORE = 'kv';
+  var dbPromise = null;
+
+  function open() {
+    if (dbPromise) return dbPromise;
+    dbPromise = new Promise(function (resolve, reject) {
+      var req = indexedDB.open(DB_NAME, 1);
+      req.onupgradeneeded = function () { req.result.createObjectStore(STORE); };
+      req.onsuccess = function () { resolve(req.result); };
+      req.onerror = function () { dbPromise = null; reject(req.error); };
+    });
+    return dbPromise;
+  }
+
+  function tx(mode, fn) {
+    return open().then(function (db) {
+      return new Promise(function (resolve, reject) {
+        var t = db.transaction(STORE, mode);
+        var req = fn(t.objectStore(STORE));
+        t.oncomplete = function () { resolve(req && req.result); };
+        t.onerror = function () { reject(t.error); };
+        t.onabort = function () { reject(t.error); };
+      });
+    });
+  }
+
+  global.MirrorDB = {
+    get: function (key) { return tx('readonly', function (s) { return s.get(key); }); },
+    set: function (key, value) { return tx('readwrite', function (s) { return s.put(value, key); }); }
+  };
+})(self);
+</script>
+<script>
+(function(){
+  var DEFAULTS = ["我會非常有錢","不關我的事","活在自己的世界裡","我超有能力","解決問題超簡單","細嚼慢嚥","冷靜沉穩，講話慢"];
+  var STATE_KEY = 'state';
+  // Where the Claude-artifact prototype kept its fallback copy; read once to migrate.
+  var LEGACY_LS_KEY = 'mirror-affirmations-state-v1';
+  var APP_TZ = 'Asia/Taipei';
+  // Set by the single-file build (static hosts like GitHub Pages / EZPage):
+  // no service worker, no push server, so reminders go through the calendar.
+  var SINGLE_FILE = !!window.MIRROR_SINGLE_FILE;
+
+  var els = {
+    todayLabel: document.getElementById('todayLabel'),
+    settingsBtn: document.getElementById('settingsBtn'),
+    reminderBtn: document.getElementById('reminderBtn'),
+    mirrorBtn: document.getElementById('mirrorBtn'),
+    mirrorFace: document.getElementById('mirrorFace'),
+    camVideo: document.getElementById('camVideo'),
+    camBtn: document.getElementById('camBtn'),
+    camWarn: document.getElementById('camWarn'),
+    phraseText: document.getElementById('phraseText'),
+    dots: document.getElementById('dots'),
+    prevBtn: document.getElementById('prevBtn'),
+    playBtn: document.getElementById('playBtn'),
+    nextBtn: document.getElementById('nextBtn'),
+    streakNum: document.getElementById('streakNum'),
+    checkBtn: document.getElementById('checkBtn'),
+    backdrop: document.getElementById('backdrop'),
+    sheet: document.getElementById('sheet'),
+    phrasesArea: document.getElementById('phrasesArea'),
+    warnMsg: document.getElementById('warnMsg'),
+    speedRange: document.getElementById('speedRange'),
+    speedVal: document.getElementById('speedVal'),
+    shuffleToggle: document.getElementById('shuffleToggle'),
+    restoreBtn: document.getElementById('restoreBtn'),
+    cancelBtn: document.getElementById('cancelBtn'),
+    saveBtn: document.getElementById('saveBtn'),
+    reminderSheet: document.getElementById('reminderSheet'),
+    installHint: document.getElementById('installHint'),
+    reminderTime: document.getElementById('reminderTime'),
+    reminderStatus: document.getElementById('reminderStatus'),
+    reminderMsg: document.getElementById('reminderMsg'),
+    reminderOnBtn: document.getElementById('reminderOnBtn'),
+    reminderTestBtn: document.getElementById('reminderTestBtn'),
+    reminderOffBtn: document.getElementById('reminderOffBtn'),
+    reminderCloseBtn: document.getElementById('reminderCloseBtn'),
+    exportBtn: document.getElementById('exportBtn'),
+    importBtn: document.getElementById('importBtn'),
+    importFile: document.getElementById('importFile'),
+    backupMsg: document.getElementById('backupMsg'),
+    pushSection: document.getElementById('pushSection'),
+    calendarNote: document.getElementById('calendarNote'),
+    icsBtn: document.getElementById('icsBtn'),
+    gcalBtn: document.getElementById('gcalBtn')
+  };
+
+  var camStream = null;
+  var cameraOn = false;
+  var state = null;
+  var order = [];
+  var orderPos = 0;
+  var timer = null;
+  var prefersReduced = false;
+  try { prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+  var isPlaying = !prefersReduced;
+
+  function taipeiDateStr(offsetDays) {
+    var d = new Date(Date.now() + (offsetDays || 0) * 86400000);
+    try {
+      return new Intl.DateTimeFormat('en-CA', { timeZone: APP_TZ }).format(d);
+    } catch (e) {
+      return d.toISOString().slice(0, 10);
+    }
+  }
+
+  function anySheetOpen() { return !els.sheet.hidden || !els.reminderSheet.hidden; }
+
+  function buildOrder() {
+    order = state.affirmations.map(function (_, i) { return i; });
+    if (state.shuffle) {
+      for (var i = order.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var t = order[i]; order[i] = order[j]; order[j] = t;
+      }
+    }
+    orderPos = 0;
+  }
+
+  function buildDots() {
+    els.dots.innerHTML = '';
+    state.affirmations.forEach(function (_, i) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'dot';
+      b.setAttribute('aria-label', '第 ' + (i + 1) + ' 句');
+      b.addEventListener('click', function () {
+        var pos = order.indexOf(i);
+        orderPos = pos === -1 ? 0 : pos;
+        showPhrase(true);
+        resetTimer();
+      });
+      els.dots.appendChild(b);
+    });
+  }
+
+  function updateDotsActive(idx) {
+    Array.prototype.forEach.call(els.dots.children, function (d, i) {
+      d.classList.toggle('active', i === idx);
+    });
+  }
+
+  function showPhrase(animate) {
+    var idx = order[orderPos];
+    var txt = state.affirmations[idx] || '';
+    if (animate && !prefersReduced) {
+      els.phraseText.style.opacity = '0';
+      els.phraseText.style.transform = 'translateY(6px)';
+      setTimeout(function () {
+        els.phraseText.textContent = txt;
+        els.phraseText.style.opacity = '1';
+        els.phraseText.style.transform = 'translateY(0)';
+      }, 240);
+    } else {
+      els.phraseText.textContent = txt;
+      els.phraseText.style.opacity = '1';
+      els.phraseText.style.transform = 'translateY(0)';
+    }
+    updateDotsActive(idx);
+  }
+
+  function stopTimer() {
+    if (timer) { clearTimeout(timer); timer = null; }
+  }
+  // Pace each phrase by how long it actually takes to read, not a flat interval —
+  // a short phrase like "我超有能力" and a longer one like "冷靜沉穩，講話慢" shouldn't
+  // get the same amount of time on screen. The speed slider sets the floor.
+  function msForText(text) {
+    var floor = Math.max(3, state.intervalSec || 6) * 1000;
+    var readTime = (text ? text.length : 0) * 320;
+    return Math.max(floor, readTime, 2500);
+  }
+  function startTimer() {
+    stopTimer();
+    if (!isPlaying || order.length < 2 || anySheetOpen()) return;
+    var idx = order[orderPos];
+    var txt = state.affirmations[idx] || '';
+    timer = setTimeout(function () {
+      orderPos = (orderPos + 1) % order.length;
+      showPhrase(true);
+      startTimer();
+    }, msForText(txt));
+  }
+  function resetTimer() { startTimer(); }
+
+  function updateCheckUI() {
+    var today = taipeiDateStr(0);
+    els.streakNum.textContent = state.streak || 0;
+    if (state.lastCompletedDate === today) {
+      els.checkBtn.textContent = '今天已完成 ✓';
+      els.checkBtn.classList.add('done');
+      els.checkBtn.disabled = true;
+    } else {
+      els.checkBtn.textContent = '今天默念完成了嗎？點我打卡';
+      els.checkBtn.classList.remove('done');
+      els.checkBtn.disabled = false;
+    }
+  }
+
+  function updateTodayLabel() {
+    try {
+      els.todayLabel.textContent = new Intl.DateTimeFormat('zh-TW', {
+        timeZone: APP_TZ, month: 'long', day: 'numeric'
+      }).format(new Date());
+    } catch (e) {
+      els.todayLabel.textContent = taipeiDateStr(0);
+    }
+  }
+
+  function render() {
+    buildOrder();
+    buildDots();
+    showPhrase(false);
+    updateCheckUI();
+    updateTodayLabel();
+    updateReminderUI();
+    els.playBtn.textContent = isPlaying ? '❚❚' : '▶';
+    els.playBtn.setAttribute('aria-label', isPlaying ? '暫停' : '播放');
+    els.mirrorBtn.setAttribute('aria-label', isPlaying ? '暫停' : '播放');
+    startTimer();
+  }
+
+  // ---------- Persistence: IndexedDB, falling back to localStorage ----------
+
+  function saveState(s) {
+    return MirrorDB.set(STATE_KEY, s).catch(function () {
+      try { localStorage.setItem(LEGACY_LS_KEY, JSON.stringify(s)); } catch (e) {}
+    });
+  }
+
+  function loadState() {
+    return MirrorDB.get(STATE_KEY).catch(function () { return null; }).then(function (s) {
+      if (s) return s;
+      try {
+        var raw = localStorage.getItem(LEGACY_LS_KEY);
+        if (raw) return JSON.parse(raw);
+      } catch (e) {}
+      return null;
+    });
+  }
+
+  function normalize(s) {
+    s = Object.assign({}, s || {});
+    if (!Array.isArray(s.affirmations) || s.affirmations.length === 0) s.affirmations = DEFAULTS.slice();
+    s.affirmations = s.affirmations.map(String).map(function (t) { return t.trim(); }).filter(Boolean);
+    if (s.affirmations.length === 0) s.affirmations = DEFAULTS.slice();
+    if (typeof s.intervalSec !== 'number') s.intervalSec = 6;
+    if (typeof s.streak !== 'number') s.streak = 0;
+    if (typeof s.shuffle !== 'boolean') s.shuffle = false;
+    if (typeof s.lastCompletedDate !== 'string') s.lastCompletedDate = null;
+    if (!s.reminder || typeof s.reminder !== 'object') s.reminder = { enabled: false, time: '08:00', endpoint: null };
+    s.version = 1;
+    return s;
+  }
+
+  function persist(newState, opts) {
+    state = newState;
+    if (!opts || opts.render !== false) render();
+    return saveState(state);
+  }
+
+  // ---------- Edit sheet ----------
+
+  function openSheet() {
+    stopTimer(); // don't keep cycling behind the user's back while they're editing
+    els.phrasesArea.value = state.affirmations.join('\n');
+    els.speedRange.value = state.intervalSec || 6;
+    els.speedVal.textContent = state.intervalSec || 6;
+    els.shuffleToggle.checked = !!state.shuffle;
+    els.warnMsg.textContent = '';
+    els.backdrop.hidden = false;
+    els.sheet.hidden = false;
+  }
+  function closeSheet() {
+    els.backdrop.hidden = true;
+    els.sheet.hidden = true;
+    els.reminderSheet.hidden = true;
+    if (isPlaying) startTimer();
+  }
+
+  function handleSave() {
+    var lines = els.phrasesArea.value.split('\n').map(function (s) { return s.trim(); }).filter(Boolean);
+    if (lines.length === 0) {
+      els.warnMsg.textContent = '請至少保留一句話。';
+      return;
+    }
+    var newState = Object.assign({}, state, {
+      affirmations: lines,
+      intervalSec: Number(els.speedRange.value) || 6,
+      shuffle: els.shuffleToggle.checked
+    });
+    closeSheet();
+    persist(newState);
+  }
+
+  function handleCheckIn() {
+    var today = taipeiDateStr(0);
+    if (state.lastCompletedDate === today) return;
+    var yesterday = taipeiDateStr(-1);
+    var streak = (state.lastCompletedDate === yesterday) ? (state.streak || 0) + 1 : 1;
+    persist(Object.assign({}, state, { streak: streak, lastCompletedDate: today }));
+    // Tell the reminder server so today's notification is skipped.
+    if (state.reminder.enabled && state.reminder.endpoint) {
+      api('checkin', { endpoint: state.reminder.endpoint, date: today }).catch(function () {});
+    }
+  }
+
+  function togglePlay() {
+    isPlaying = !isPlaying;
+    els.playBtn.textContent = isPlaying ? '❚❚' : '▶';
+    els.playBtn.setAttribute('aria-label', isPlaying ? '暫停' : '播放');
+    els.mirrorBtn.setAttribute('aria-label', isPlaying ? '暫停' : '播放');
+    if (isPlaying) startTimer(); else stopTimer();
+  }
+
+  // ---------- Camera ----------
+
+  // Front camera: off by default (no surprise permission prompt on a page you
+  // open every morning). Tapping the button asks once per visit; the browser
+  // remembers the grant, so it won't ask again unless it's actually blocked.
+  function stopCamera() {
+    if (camStream) {
+      camStream.getTracks().forEach(function (t) { t.stop(); });
+      camStream = null;
+    }
+    els.camVideo.srcObject = null;
+    els.mirrorFace.classList.remove('camera-on');
+    cameraOn = false;
+    els.camBtn.textContent = '開啟鏡頭';
+    els.camBtn.classList.remove('on');
+  }
+  function startCamera() {
+    els.camWarn.textContent = '';
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+      els.camWarn.textContent = '這個環境不支援開啟鏡頭，先用玻璃鏡效果吧。';
+      return;
+    }
+    navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user' }, audio: false })
+      .then(function (stream) {
+        camStream = stream;
+        els.camVideo.srcObject = stream;
+        var playPromise = els.camVideo.play();
+        if (playPromise && playPromise.catch) playPromise.catch(function () {});
+        els.mirrorFace.classList.add('camera-on');
+        cameraOn = true;
+        els.camBtn.textContent = '關閉鏡頭';
+        els.camBtn.classList.add('on');
+      })
+      .catch(function () {
+        els.camWarn.textContent = '無法開啟鏡頭，可能是權限被拒絕，或這個頁面所在的環境不允許使用鏡頭——先用玻璃鏡效果吧。';
+      });
+  }
+
+  // ---------- Daily reminder (Web Push) ----------
+
+  var pushSupported = !SINGLE_FILE && 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
+  var swReg = null;
+  var vapidKey = null;      // resolved ahead of time so subscribe() runs inside the tap
+  var vapidKeyPromise = null;
+
+  function isIOS() {
+    return /iphone|ipad|ipod/i.test(navigator.userAgent) ||
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  }
+  function isStandalone() {
+    try { if (window.matchMedia('(display-mode: standalone)').matches) return true; } catch (e) {}
+    return navigator.standalone === true;
+  }
+  function userTimeZone() {
+    try { return Intl.DateTimeFormat().resolvedOptions().timeZone || APP_TZ; } catch (e) { return APP_TZ; }
+  }
+
+  function api(path, body) {
+    return fetch('api/' + path, {
+      method: body ? 'POST' : 'GET',
+      headers: body ? { 'Content-Type': 'application/json' } : undefined,
+      body: body ? JSON.stringify(body) : undefined
+    }).then(function (res) {
+      return res.json().catch(function () { return {}; }).then(function (data) {
+        if (!res.ok) {
+          var err = new Error(data.error || ('HTTP ' + res.status));
+          err.code = data.error || 'http-' + res.status;
+          throw err;
+        }
+        return data;
+      });
+    }, function () {
+      var err = new Error('offline');
+      err.code = 'offline';
+      throw err;
+    });
+  }
+
+  function loadVapidKey() {
+    if (!vapidKeyPromise) {
+      vapidKeyPromise = api('config').then(function (d) {
+        vapidKey = d.vapidPublicKey;
+        return vapidKey;
+      }, function (e) { vapidKeyPromise = null; throw e; });
+    }
+    return vapidKeyPromise;
+  }
+
+  function b64urlToU8(s) {
+    s = s.replace(/-/g, '+').replace(/_/g, '/');
+    while (s.length % 4) s += '=';
+    var bin = atob(s), out = new Uint8Array(bin.length);
+    for (var i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+    return out;
+  }
+
+  function subscribePush(reg, key) {
+    var opts = { userVisibleOnly: true, applicationServerKey: b64urlToU8(key) };
+    return reg.pushManager.subscribe(opts).catch(function (e) {
+      // An old subscription made with a different server key blocks a new one.
+      if (e && e.name === 'InvalidStateError') {
+        return reg.pushManager.getSubscription().then(function (old) {
+          return (old ? old.unsubscribe() : Promise.resolve()).then(function () {
+            return reg.pushManager.subscribe(opts);
+          });
+        });
+      }
+      throw e;
+    });
+  }
+
+  function registerWithServer(sub, time) {
+    return api('subscribe', {
+      subscription: sub.toJSON(),
+      time: time,
+      tz: userTimeZone(),
+      lastCheckin: state.lastCompletedDate
+    });
+  }
+
+  function setReminderMsg(t) { els.reminderMsg.textContent = t || ''; }
+
+  function updateReminderUI() {
+    var r = state.reminder;
+    var on = !!r.enabled;
+    els.reminderBtn.classList.toggle('has-badge', on);
+    els.reminderStatus.textContent = on ? '每天 ' + r.time : '未開啟';
+    els.reminderStatus.classList.toggle('on', on);
+    els.reminderOnBtn.textContent = on ? '更新提醒時間' : '開啟提醒';
+    els.reminderTestBtn.hidden = !on;
+    els.reminderOffBtn.hidden = !on;
+  }
+
+  function reminderBlockedReason() {
+    if (!pushSupported) {
+      if (isIOS() && !isStandalone()) return 'ios-install';
+      return 'unsupported';
+    }
+    if (Notification.permission === 'denied') return 'denied';
+    return null;
+  }
+
+  var BLOCKED_MSG = {
+    'ios-install': 'iPhone／iPad 要先在 Safari 按「分享 → 加入主畫面」，再從主畫面的鏡語圖示打開，才能開啟提醒。',
+    'unsupported': '這個瀏覽器不支援推播通知，換成 Chrome、Edge、Firefox，或 iPhone 上加入主畫面的版本試試。',
+    'denied': '通知權限被封鎖了。請到瀏覽器（或手機的「設定 → 通知」）允許鏡語傳送通知，再回來按一次。'
+  };
+
+  function openReminderSheet() {
+    stopTimer();
+    els.reminderTime.value = state.reminder.time || '08:00';
+    setReminderMsg('');
+    els.backupMsg.textContent = '';
+    els.pushSection.hidden = SINGLE_FILE;
+    els.reminderStatus.hidden = SINGLE_FILE;
+    if (SINGLE_FILE) {
+      els.calendarNote.textContent = '選好時間後，把提醒加進手機行事曆：每天這個時間由行事曆跳出通知，關掉瀏覽器也照常提醒，點開通知就能回到鏡語。';
+    }
+    var blocked = SINGLE_FILE ? null : reminderBlockedReason();
+    els.installHint.hidden = blocked !== 'ios-install';
+    els.installHint.textContent = blocked === 'ios-install' ? BLOCKED_MSG['ios-install'] : '';
+    if (pushSupported) loadVapidKey().catch(function () {});
+    updateReminderUI();
+    els.backdrop.hidden = false;
+    els.reminderSheet.hidden = false;
+  }
+
+  function describeError(e) {
+    if (e && e.code === 'push-not-configured') return '提醒伺服器還沒設定推播金鑰（VAPID），請照 README 設定後再試。';
+    if (e && (e.code === 'offline' || e.code === 'http-404' || e.code === 'not-found')) return '連不上提醒伺服器。離線時沒辦法設定提醒，請連上網路再試一次。';
+    if (e && e.code === 'not-subscribed') return '伺服器上找不到這台裝置的訂閱，請按「更新提醒時間」重新登記一次。';
+    if (e && e.code === 'subscription-expired') return '這台裝置的推播訂閱已失效，請按「更新提醒時間」重新登記。';
+    if (typeof Notification !== 'undefined' && Notification.permission === 'denied') return BLOCKED_MSG.denied;
+    if (e && e.name === 'NotAllowedError') return '沒有取得通知權限，所以沒辦法提醒你。';
+    return '設定失敗：' + ((e && e.message) || '未知錯誤');
+  }
+
+  function enableReminder() {
+    var blocked = reminderBlockedReason();
+    if (blocked) { setReminderMsg(BLOCKED_MSG[blocked]); return; }
+    var time = els.reminderTime.value || '08:00';
+    els.reminderOnBtn.disabled = true;
+    setReminderMsg('設定中…');
+
+    // Safari only allows subscribe() during the tap itself, so when the worker
+    // and server key are already on hand we call it synchronously here.
+    var subPromise = (swReg && vapidKey)
+      ? subscribePush(swReg, vapidKey)
+      : Promise.all([navigator.serviceWorker.ready, loadVapidKey()]).then(function (v) {
+          swReg = v[0];
+          return subscribePush(v[0], v[1]);
+        });
+
+    subPromise
+      .then(function (sub) {
+        return registerWithServer(sub, time).then(function () { return sub; });
+      })
+      .then(function (sub) {
+        return persist(Object.assign({}, state, {
+          reminder: { enabled: true, time: time, endpoint: sub.endpoint }
+        }), { render: false }).then(function () {
+          updateReminderUI();
+          setReminderMsg('好了！每天 ' + time + ' 會提醒你（今天打過卡就不吵你）。可以按「傳送測試通知」確認一下。');
+        });
+      })
+      .catch(function (e) { setReminderMsg(describeError(e)); })
+      .then(function () { els.reminderOnBtn.disabled = false; });
+  }
+
+  function disableReminder() {
+    els.reminderOffBtn.disabled = true;
+    var endpoint = state.reminder.endpoint;
+    var unsub = (swReg ? swReg.pushManager.getSubscription() : Promise.resolve(null))
+      .then(function (sub) { return sub && sub.unsubscribe(); })
+      .catch(function () {});
+    var server = endpoint ? api('unsubscribe', { endpoint: endpoint }).catch(function () {}) : Promise.resolve();
+    Promise.all([unsub, server]).then(function () {
+      return persist(Object.assign({}, state, {
+        reminder: { enabled: false, time: state.reminder.time, endpoint: null }
+      }), { render: false });
+    }).then(function () {
+      updateReminderUI();
+      setReminderMsg('已關閉每日提醒。');
+      els.reminderOffBtn.disabled = false;
+    });
+  }
+
+  function testReminder() {
+    els.reminderTestBtn.disabled = true;
+    setReminderMsg('傳送中…');
+    api('test', { endpoint: state.reminder.endpoint })
+      .then(function () { setReminderMsg('已送出，幾秒內應該會跳出一則通知。沒看到的話，檢查一下系統的通知或勿擾模式設定。'); })
+      .catch(function (e) { setReminderMsg(describeError(e)); })
+      .then(function () { els.reminderTestBtn.disabled = false; });
+  }
+
+  // Keep the server's copy in step with the browser's subscription, which can
+  // be rotated or dropped by the browser without asking us.
+  function syncReminder() {
+    if (!pushSupported || !state.reminder.enabled || !swReg) return;
+    if (Notification.permission !== 'granted') return;
+    swReg.pushManager.getSubscription().then(function (sub) {
+      if (sub && sub.endpoint === state.reminder.endpoint) return;
+      var ready = sub ? Promise.resolve(sub) : loadVapidKey().then(function (k) { return subscribePush(swReg, k); });
+      return ready.then(function (s) {
+        return registerWithServer(s, state.reminder.time).then(function () {
+          return persist(Object.assign({}, state, {
+            reminder: Object.assign({}, state.reminder, { endpoint: s.endpoint })
+          }), { render: false });
+        });
+      });
+    }).catch(function () {});
+  }
+
+  // ---------- Calendar reminder (works without any server) ----------
+
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+
+  // First occurrence: today if the time is still ahead, otherwise tomorrow.
+  // Times are "floating" (no zone), so the calendar uses the phone's local time.
+  function firstOccurrence(time) {
+    var hm = time.split(':').map(Number);
+    var d = new Date();
+    d.setHours(hm[0], hm[1], 0, 0);
+    if (d.getTime() < Date.now()) d.setDate(d.getDate() + 1);
+    return d;
+  }
+  function icsLocal(d) {
+    return d.getFullYear() + pad2(d.getMonth() + 1) + pad2(d.getDate()) + 'T' + pad2(d.getHours()) + pad2(d.getMinutes()) + '00';
+  }
+  function appUrl() { return location.href.split('#')[0].split('?')[0]; }
+
+  function saveReminderTime(time) {
+    if (state.reminder.time === time) return;
+    persist(Object.assign({}, state, { reminder: Object.assign({}, state.reminder, { time: time }) }), { render: false });
+  }
+
+  function addToAppleCalendar() {
+    var time = els.reminderTime.value || '08:00';
+    saveReminderTime(time);
+    var start = firstOccurrence(time);
+    var end = new Date(start.getTime() + 5 * 60000);
+    var now = new Date();
+    var stamp = now.getUTCFullYear() + pad2(now.getUTCMonth() + 1) + pad2(now.getUTCDate()) + 'T' +
+      pad2(now.getUTCHours()) + pad2(now.getUTCMinutes()) + pad2(now.getUTCSeconds()) + 'Z';
+    var ics = [
+      'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//mirror-app//zh-TW', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
+      'BEGIN:VEVENT',
+      'UID:mirror-daily-' + Date.now() + '@mirror-app',
+      'DTSTAMP:' + stamp,
+      'DTSTART:' + icsLocal(start),
+      'DTEND:' + icsLocal(end),
+      'RRULE:FREQ=DAILY',
+      'SUMMARY:鏡語｜看著鏡子念一遍',
+      'DESCRIPTION:打開鏡語：' + appUrl(),
+      'URL:' + appUrl(),
+      'BEGIN:VALARM', 'ACTION:DISPLAY', 'DESCRIPTION:鏡語', 'TRIGGER:PT0M', 'END:VALARM',
+      'END:VEVENT', 'END:VCALENDAR', ''
+    ].join('\r\n');
+    // iOS Safari opens the "Add to Calendar" sheet for a text/calendar data URL;
+    // elsewhere a downloaded .ics opens in the default calendar app.
+    if (isIOS()) {
+      location.href = 'data:text/calendar;charset=utf-8,' + encodeURIComponent(ics);
+    } else {
+      var url = URL.createObjectURL(new Blob([ics], { type: 'text/calendar;charset=utf-8' }));
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = 'mirror-reminder.ics';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+    }
+    setReminderMsg('已產生每天 ' + time + ' 的行事曆提醒，在跳出的畫面按「加入」即可。');
+  }
+
+  function addToGoogleCalendar() {
+    var time = els.reminderTime.value || '08:00';
+    saveReminderTime(time);
+    var start = firstOccurrence(time);
+    var end = new Date(start.getTime() + 5 * 60000);
+    var q = [
+      'action=TEMPLATE',
+      'text=' + encodeURIComponent('鏡語｜看著鏡子念一遍'),
+      'details=' + encodeURIComponent('打開鏡語：' + appUrl()),
+      'dates=' + icsLocal(start) + '/' + icsLocal(end),
+      'recur=' + encodeURIComponent('RRULE:FREQ=DAILY')
+    ].join('&');
+    window.open('https://calendar.google.com/calendar/render?' + q, '_blank', 'noopener');
+    setReminderMsg('已開啟 Google 日曆，確認時間後按「儲存」。通知方式可以在活動裡設成「活動開始時」。');
+  }
+
+  // ---------- Backup: export / import JSON ----------
+
+  function exportData() {
+    var payload = {
+      app: 'mirror',
+      version: 1,
+      exportedAt: new Date().toISOString(),
+      data: {
+        affirmations: state.affirmations,
+        intervalSec: state.intervalSec,
+        shuffle: state.shuffle,
+        streak: state.streak,
+        lastCompletedDate: state.lastCompletedDate,
+        reminderTime: state.reminder.time
+      }
+    };
+    var name = 'mirror-backup-' + taipeiDateStr(0) + '.json';
+    var text = JSON.stringify(payload, null, 2);
+    var file;
+    try { file = new File([text], name, { type: 'application/json' }); } catch (e) { file = null; }
+    // In an iOS home-screen app a plain download goes nowhere useful; the
+    // share sheet lets the file be saved to Files or sent elsewhere.
+    if (file && isIOS() && navigator.canShare && navigator.canShare({ files: [file] })) {
+      navigator.share({ files: [file], title: name }).catch(function () {});
+      return;
+    }
+    var url = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+    els.backupMsg.textContent = '已匯出 ' + name;
+  }
+
+  function importData(file) {
+    var reader = new FileReader();
+    reader.onload = function () {
+      var parsed;
+      try { parsed = JSON.parse(reader.result); } catch (e) {
+        els.backupMsg.textContent = '這不是有效的 JSON 檔。';
+        return;
+      }
+      // Accept both our export envelope and a bare state object.
+      var d = parsed && parsed.data ? parsed.data : parsed;
+      if (!d || !Array.isArray(d.affirmations) || !d.affirmations.some(function (t) { return typeof t === 'string' && t.trim(); })) {
+        els.backupMsg.textContent = '檔案裡找不到句子清單，看起來不是鏡語的備份。';
+        return;
+      }
+      if (!window.confirm('匯入會覆蓋目前的句子、設定與連續天數（' + (d.streak || 0) + ' 天），確定嗎？')) return;
+      var next = normalize({
+        affirmations: d.affirmations,
+        intervalSec: d.intervalSec,
+        shuffle: d.shuffle,
+        streak: d.streak,
+        lastCompletedDate: d.lastCompletedDate,
+        reminder: state.reminder
+      });
+      persist(next).then(function () {
+        els.backupMsg.textContent = '匯入完成：' + next.affirmations.length + ' 句，連續 ' + next.streak + ' 天。';
+        if (next.reminder.enabled && next.reminder.endpoint && next.lastCompletedDate) {
+          api('checkin', { endpoint: next.reminder.endpoint, date: next.lastCompletedDate }).catch(function () {});
+        }
+      });
+    };
+    reader.readAsText(file);
+  }
+
+  // ---------- Wiring ----------
+
+  els.camBtn.addEventListener('click', function () {
+    if (cameraOn) stopCamera(); else startCamera();
+  });
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) { stopCamera(); return; }
+    // A home-screen app can sit in the background overnight; refresh the day.
+    if (state) { updateCheckUI(); updateTodayLabel(); syncReminder(); }
+  });
+
+  els.settingsBtn.addEventListener('click', openSheet);
+  els.reminderBtn.addEventListener('click', openReminderSheet);
+  els.cancelBtn.addEventListener('click', closeSheet);
+  els.reminderCloseBtn.addEventListener('click', closeSheet);
+  els.backdrop.addEventListener('click', closeSheet);
+  els.saveBtn.addEventListener('click', handleSave);
+  els.restoreBtn.addEventListener('click', function () {
+    els.phrasesArea.value = DEFAULTS.join('\n');
+  });
+  els.speedRange.addEventListener('input', function () {
+    els.speedVal.textContent = els.speedRange.value;
+  });
+  els.prevBtn.addEventListener('click', function () {
+    orderPos = (orderPos - 1 + order.length) % order.length;
+    showPhrase(true);
+    resetTimer();
+  });
+  els.nextBtn.addEventListener('click', function () {
+    orderPos = (orderPos + 1) % order.length;
+    showPhrase(true);
+    resetTimer();
+  });
+  els.mirrorBtn.addEventListener('click', togglePlay);
+  els.playBtn.addEventListener('click', togglePlay);
+  els.checkBtn.addEventListener('click', handleCheckIn);
+
+  els.reminderOnBtn.addEventListener('click', enableReminder);
+  els.reminderOffBtn.addEventListener('click', disableReminder);
+  els.reminderTestBtn.addEventListener('click', testReminder);
+  els.icsBtn.addEventListener('click', addToAppleCalendar);
+  els.gcalBtn.addEventListener('click', addToGoogleCalendar);
+  els.exportBtn.addEventListener('click', exportData);
+  els.importBtn.addEventListener('click', function () { els.importFile.click(); });
+  els.importFile.addEventListener('change', function () {
+    var f = els.importFile.files && els.importFile.files[0];
+    if (f) importData(f);
+    els.importFile.value = '';
+  });
+
+  // Desktop habit: people reading on a laptop reach for arrow keys before they
+  // reach for the mouse. Space is left to native button activation so it
+  // doesn't double-fire when a control already has focus.
+  document.addEventListener('keydown', function (e) {
+    if (anySheetOpen()) {
+      if (e.key === 'Escape') closeSheet();
+      return;
+    }
+    if (e.key === 'ArrowRight') { e.preventDefault(); els.nextBtn.click(); }
+    else if (e.key === 'ArrowLeft') { e.preventDefault(); els.prevBtn.click(); }
+  });
+
+  function init() {
+    loadState().then(function (loaded) {
+      var migrated = !!loaded && !loaded.reminder; // legacy prototype shape
+      state = normalize(loaded);
+      render();
+      if (!loaded || migrated) saveState(state);
+
+      if (!SINGLE_FILE && 'serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js').catch(function () {});
+        navigator.serviceWorker.ready.then(function (reg) {
+          swReg = reg;
+          syncReminder();
+        });
+      }
+      if (pushSupported && state.reminder.enabled) loadVapidKey().catch(function () {});
+    });
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>
